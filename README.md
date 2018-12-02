@@ -7,8 +7,10 @@ di programmazione" 2017/2018.
 The project is well-organized into folders:
 * root : contains only CMakeList and README
 * src : contains the source files (.c)
-* include : contains the headers
-* build : contains the executables (including the outputs of the cmake process)
+* include : contains the headers (.h)
+* build : contains the makefile and the other outputs of the cmake process
+* bin : contains the executables
+* lib : contains the libraries
 
 Once the CMakeList file is ready, one has to:
 1. move to the "build" folder
