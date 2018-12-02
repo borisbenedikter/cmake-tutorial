@@ -14,8 +14,12 @@ include_directories(include)
 add_compile_options(-Wall -O3)  # optimized
 
 # add the executable
-set (CMAKE_RUNTIME_OUTPUT_DIRECTORY ../bin)  # Folder
+#set (CMAKE_RUNTIME_OUTPUT_DIRECTORY ../bin)  # Folder
 add_executable (${CMAKE_PROJECT_NAME} ${SRCS})
 
 # math.h library (must be after the target!)
 target_link_libraries(${CMAKE_PROJECT_NAME} m)
+
+# set the executable directory to bin
+set_target_properties(${CMAKE_PROJECT_NAME} 
+    PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin )
