@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/hello_world.dir/src/hello_world.c.o"
   "CMakeFiles/hello_world.dir/src/funzioni_esempio.c.o"
-  "hello_world.pdb"
-  "hello_world"
+  "../bin/hello_world.pdb"
+  "../bin/hello_world"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -9,7 +9,11 @@ set (SRCS src/hello_world.c src/funzioni_esempio.c)
 # Include directories
 include_directories(include)
 
+# Compiler options
+add_compile_options(-Wall -O3)
+
 # add the executable
+set (CMAKE_RUNTIME_OUTPUT_DIRECTORY ../bin)  # Folder
 add_executable (${CMAKE_PROJECT_NAME} ${SRCS})
 
 # math.h library (must be after the target!)
