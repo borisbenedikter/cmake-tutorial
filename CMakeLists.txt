@@ -10,7 +10,8 @@ set (SRCS src/hello_world.c src/funzioni_esempio.c)
 include_directories(include)
 
 # Compiler options
-add_compile_options(-Wall -O3)
+#add_compile_options(-Wall -O0 -g) # debug
+add_compile_options(-Wall -O3)  # optimized
 
 # add the executable
 set (CMAKE_RUNTIME_OUTPUT_DIRECTORY ../bin)  # Folder
