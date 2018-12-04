@@ -11,6 +11,7 @@ The project is well-organized into folders:
 * build : contains the makefile and the other outputs of the cmake process
 * bin : contains the executables
 * lib : contains the libraries
+* doc : contains the documentation
 
 Once the CMakeList file is ready, one has to:
 1. move to the "build" folder
